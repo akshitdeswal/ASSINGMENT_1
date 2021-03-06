@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.image.ImageView;
 import models.Student;
 
 import java.net.URL;
@@ -24,6 +25,9 @@ public class StudentViewController implements Initializable {
     @FXML
     private ListView interestList;
 
+    @FXML
+    private ImageView cardImage;
+
     private Student student;
 
     @Override
@@ -34,8 +38,7 @@ public class StudentViewController implements Initializable {
         firstNameLabel.setText(student.getFirstName());
         lastNameLabel.setText(student.getLastName());
         studentNumberLabel.setText(Integer.toString(student.getStudentNumber()));
-//
-
+        cardImage.setImage(student.getStudentImage());
 
     }
 }

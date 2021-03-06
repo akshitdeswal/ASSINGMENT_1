@@ -1,4 +1,6 @@
 package models;
+import javafx.scene.image.Image;
+
 import java.util.ArrayList;
 
 
@@ -8,6 +10,7 @@ public class Student {
     private String lastName;
     private int studentNumber;
     private ArrayList<String> interests;
+    private Image studentImage;
 
     /*
     The Constructor takes 4 argument two of String type, one integer type and one is ArrayList<String> type.
@@ -17,6 +20,17 @@ public class Student {
         setLastName(lastName);
         setStudentNumber(studentNumber);
         setInterest(interest);
+        setStudentImage();
+    }
+
+    public void setStudentImage() {
+        String filePath = String.format("images\\Nida_200454398.jpeg");
+//        System.out.println(filePath);
+        studentImage = new Image(filePath);
+    }
+
+    public Image getStudentImage() {
+        return studentImage;
     }
 
     //    setter and getter for each variable.
