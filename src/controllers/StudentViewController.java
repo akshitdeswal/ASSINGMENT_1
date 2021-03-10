@@ -26,7 +26,7 @@ public class StudentViewController implements Initializable {
     private ListView interestList;
 
     @FXML
-    private ImageView cardImage;
+    private ImageView imageView;
 
     private Student student;
 
@@ -34,11 +34,12 @@ public class StudentViewController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         ArrayList<String> unchartedInterests = new ArrayList<>();
         unchartedInterests.addAll(Arrays.asList("dancing","sports","music"));
-        student = new Student("AKSHIT","DESWAL", 200454399, unchartedInterests);
+        student = new Student("Nida","Whatever", 200454398, unchartedInterests);
+        System.out.println(student.getInterest());
         firstNameLabel.setText(student.getFirstName());
         lastNameLabel.setText(student.getLastName());
         studentNumberLabel.setText(Integer.toString(student.getStudentNumber()));
-        cardImage.setImage(student.getStudentImage());
+        imageView.setImage(student.getImage());
 
     }
 }

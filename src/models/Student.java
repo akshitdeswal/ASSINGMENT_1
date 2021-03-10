@@ -10,7 +10,7 @@ public class Student {
     private String lastName;
     private int studentNumber;
     private ArrayList<String> interests;
-    private Image studentImage;
+    private Image image;
 
     /*
     The Constructor takes 4 argument two of String type, one integer type and one is ArrayList<String> type.
@@ -20,17 +20,17 @@ public class Student {
         setLastName(lastName);
         setStudentNumber(studentNumber);
         setInterest(interest);
-        setStudentImage();
+        setImage();
     }
 
-    public void setStudentImage() {
-        String filePath = String.format("images\\Nida_200454398.jpeg");
-//        System.out.println(filePath);
-        studentImage = new Image(filePath);
+    private void setImage()
+    {
+        String filePath = String.format("images/%s_%d.jpeg",firstName,studentNumber);
+        this.image = new Image(filePath);
     }
 
-    public Image getStudentImage() {
-        return studentImage;
+    public Image getImage() {
+        return image;
     }
 
     //    setter and getter for each variable.
