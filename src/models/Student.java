@@ -67,8 +67,8 @@ public class Student {
      */
     public static ArrayList<String> addActivities()
     {
-        ArrayList<String> interests = new ArrayList<>();//new ArrayList or we can use List here
-        interests.add("hiking");//all the valid inputs
+        ArrayList<String> interests = new ArrayList<>();//new ArrayList or we can use List here.
+        interests.add("hiking");//all the valid inputs.
         interests.add("skiing");
         interests.add("reading");
         interests.add("coding");

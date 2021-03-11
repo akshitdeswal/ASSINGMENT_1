@@ -41,7 +41,7 @@ public class StudentViewController implements Initializable {
         unchartedInterests.addAll(Arrays.asList("dancing","sports","music", "gaming"));
 
         student = new Student("Akshit","Deswal", 200454399, unchartedInterests);
-        //set the first name label.
+        //set the first name label
         firstNameLabel.setText(student.getFirstName());
         //set last name label.
         lastNameLabel.setText(student.getLastName());
