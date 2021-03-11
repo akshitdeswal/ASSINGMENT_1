@@ -25,7 +25,7 @@ public class Student {
 
     private void setImage()
     {
-        String filePath = String.format("images/%s_%d.jpeg",firstName,studentNumber);
+        String filePath = String.format("images/%s_%d.jfif",firstName,studentNumber);
         this.image = new Image(filePath);
     }
 
@@ -65,7 +65,7 @@ public class Student {
     /*
     Static method which returns an ArrayList of type String and returns the same type of data.
      */
-    public static ArrayList<String> availableInterest()
+    public static ArrayList<String> addActivities()
     {
         ArrayList<String> interests = new ArrayList<>();//new ArrayList or we can use List here
         interests.add("hiking");//all the valid inputs
@@ -80,7 +80,7 @@ public class Student {
     }
 
     public void setInterest(ArrayList<String> interests) {
-        ArrayList<String> validInterest = availableInterest();
+        ArrayList<String> validInterest = addActivities();
         for (String interest : interests)//for loop is used to iterate the ArrayList.
         {
             if (!validInterest.contains(interest))//condition
