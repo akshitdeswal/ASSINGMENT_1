@@ -1,11 +1,16 @@
 package models;
+/*
+Description: Our student model class with five instance variables or functions of the Student Object
+Author: Akshit Deswal
+Date: 10 March 2021, 9:37 PM EST
+ */
 import javafx.scene.image.Image;
 
 import java.util.ArrayList;
 
 
 public class Student {
-    //    three private variables.
+    //  Three private variables.
     private String firstName;
     private String lastName;
     private int studentNumber;
@@ -22,7 +27,7 @@ public class Student {
         setInterest(interest);
         setImage();
     }
-
+    //set method is used to set Image.
     private void setImage()
     {
         String filePath = String.format("images/%s_%d.jfif",firstName,studentNumber);
@@ -30,6 +35,7 @@ public class Student {
     }
 
     public Image getImage() {
+
         return image;
     }
 
@@ -88,7 +94,8 @@ public class Student {
         }
         this.interests = interests;
     }
-    public ArrayList<String> getInterest(){
+    public ArrayList<String> getInterest()
+    {
         return interests;
     }
 

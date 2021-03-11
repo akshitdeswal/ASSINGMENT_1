@@ -1,18 +1,30 @@
 package controllers;
-
+/*
+Description: controller class to control the view of our show on stage or our apllicatoin on GUI.
+Author: Akshit Deswal
+Date: 10 March 2021, 9:40 PM EST
+ */
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.image.ImageView;
+import javafx.stage.Stage;
 import models.Student;
 
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.ResourceBundle;
+
+import static javafx.scene.control.SelectionMode.MULTIPLE;
 
 
 public class StudentViewController implements Initializable {
@@ -52,6 +64,6 @@ public class StudentViewController implements Initializable {
         interestList.setItems(interests);
         //set the image of the student.
         imageView.setImage(student.getImage());
-
     }
+
 }

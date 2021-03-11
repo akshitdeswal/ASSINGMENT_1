@@ -1,3 +1,8 @@
+/*
+Description: Main class where our gui will run
+Author: Akshit Deswal
+Date: 8 March 2021, 4:45 PM EST
+ */
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -17,4 +22,5 @@ public class Main extends Application {
         stage.setTitle("Viewing a Single Student Object");
         stage.show();
     }
+
 }
